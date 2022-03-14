@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="WebDriverManager" Version="2.12.3" />
+    <PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="BrowserStackLocal" Version="2.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Selenium.WebDriver" />
+    <None Remove="WebDriverManager" />
+    <None Remove="Selenium.Support" />
+    <None Remove="DotNetSeleniumExtras.PageObjects" />
+    <None Remove="Pages\" />
+    <None Remove="Utilities\" />
+    <None Remove="BrowserStackLocal" />
+    <None Remove="System.Configuration.ConfigurationManager" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+</Project>
